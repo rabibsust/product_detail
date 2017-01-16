@@ -5,7 +5,9 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h1>Edit: {{$product->name}}</h1></div>
+                        <h1>Edit: {{$product->name}}</h1>
+                        <a href="{{url('home')}}" class="btn btn-primary">Go Back</a>
+                    </div>
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-xs-offset-1 col-xs-9">

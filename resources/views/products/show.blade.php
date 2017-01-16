@@ -16,6 +16,7 @@
                         {{$product->quantity}}<br/>
                         {{$product->description}}<br/>
                     </div>
+                    <div class="col-md-4"><a href="{{url('/')}}" class="btn btn-primary">Go Back</a> </div>
                 </div>
             </div>
         </div>
