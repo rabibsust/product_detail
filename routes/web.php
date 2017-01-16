@@ -13,5 +13,12 @@
 
 Auth::routes();
 
-Route::get('/', 'ProductController@index');
+Route::get('/', 'ProductController@index')->middleware('guest');
+Route::get('/products/{id}', 'ProductController@show');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/products/edit/{id}', 'ProductController@edit')->name('products.edit');
+    Route::post('/products', 'ProductController@store')->name('products.store');
+    Route::patch('/products/{id}', 'ProductController@update')->name('products.update');
+    Route::delete('/products/{id}', 'ProductController@destroy')->name('products.destroy');
+});
 Route::get('/home', 'HomeController@index');
