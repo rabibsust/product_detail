@@ -63,7 +63,7 @@ class ProductController extends Controller
         }
         $product->name = $request->name;
         $product->price = $request->price;
-        $product->description = $request->description;
+        $product->description = nl2br($request->description);
         $product->quantity = $request->quantity;
         $product->save();
         return redirect('home');
@@ -97,7 +97,7 @@ class ProductController extends Controller
         }
         $product->name = $request->name;
         $product->price = $request->price;
-        $product->description = $request->description;
+        $product->description = nl2br($request->description);
         $product->quantity = $request->quantity;
         $product->save();
         return redirect('home');

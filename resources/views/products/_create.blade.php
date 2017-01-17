@@ -24,7 +24,7 @@
                                 </div>
                                 <div class="form-group">
                                     {!! Form::label('Description', 'Description:') !!}
-                                    {!! Form::text('description',null,['class'=>'form-control']) !!}
+                                    {!! Form::textarea('description',null,['class'=>'form-control']) !!}
                                 </div>
                                 <div class="form-group">
                                     {!! Form::label('Image', 'Image:') !!}

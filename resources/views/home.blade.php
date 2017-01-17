@@ -27,7 +27,6 @@
                                     <td>{{ $product->id }}</td>
                                     <td>{{ $product->name }}</td>
                                     <td>{{ $product->price }}</td>
-                                    <td>{{ $product->description }}</td>
                                     <td>{{ $product->quantity }}</td>
                                     <td><img src="{{asset('images/'.$product->image)}}" height="35" width="50"></td>
                                     <td><a href="{{url('products',$product->id)}}" class="btn btn-primary btn-xs">View</a>
@@ -43,6 +42,7 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="pull-right">{{ $products->links() }}</div>
                 </div>
             </div>
         </div>

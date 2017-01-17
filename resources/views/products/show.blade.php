@@ -11,10 +11,10 @@
                         <img src="{{asset('images/'.$product->image)}}" height="240" class="img-rounded">
                     </div>
                     <div class="col-md-6">
-                        {{$product->name}}<br/>
-                        {{$product->description}}<br/>
-                        {{$product->price}}<br/>
-                        {{$product->quantity}}<br/>
+                        <b>Name:</b> {{$product->name}}<br/>
+                        <b>Description:</b><br/>{!! $product->description !!}<br/>
+                        <b>Price:</b>{{$product->price}}<br/>
+                        <b>Quantity:</b>{{$product->quantity}}<br/>
                     </div>
                     <div class="col-md-4"><a href="{{url('/')}}" class="btn btn-primary">Go Back</a> </div>
                 </div>
