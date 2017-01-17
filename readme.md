@@ -17,12 +17,13 @@ This application have these features:
 - Run `git clone https://github.com/rabibsust/product_detail.git`
 - Run `composer install`
 - Open your mysql server admin panel and add database.
+- Go to your project directory.
 - Copy **.env.example** file and change it to **.env**
 - Update **.env** file by setting:
   - DB_DATABASE=product   *----change this with your database name----*
   - DB_USERNAME=root      *----change this with your database username-----*
   - DB_PASSWORD=          *------change this with your database password------*
-- Open console
+- Open console and go to the project directory.
 - Run `php artisan migrate`
 - Run `php artisan db:seed`
 - Run `php artisan serve`
