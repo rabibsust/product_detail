@@ -30,11 +30,11 @@
                                     <td>{{ $product->description }}</td>
                                     <td>{{ $product->quantity }}</td>
                                     <td><img src="{{asset('images/'.$product->image)}}" height="35" width="50"></td>
-                                    <td><a href="{{url('products',$product->id)}}" class="btn btn-primary">View</a></td>
-                                    <td><a href="{{route('products.edit',$product->id)}}" class="btn btn-warning">Update</a></td>
+                                    <td><a href="{{url('products',$product->id)}}" class="btn btn-primary btn-xs">View</a></td>
+                                    <td><a href="{{route('products.edit',$product->id)}}" class="btn btn-warning btn-xs">Update</a></td>
                                     <td>
                                         {!! Form::open(['method' => 'DELETE', 'route'=>['products.destroy', $product->id]]) !!}
-                                        {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
+                                        {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
                                         {!! Form::close() !!}
                                     </td>
                                 </tr>

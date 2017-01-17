@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -19,6 +20,7 @@
                 'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 </head>
 <body>
     <div id="app">
@@ -72,8 +74,16 @@
         </nav>
         @yield('content')
     </div>
-
+    <footer class="footer">
+        <div class="container">
+            <p align="center">
+                <br/>
+                Copyrights &copy; 2017, Developed by Ahmad Jamaly Rabib
+            </p>
+        </div>
+    </footer>
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 </body>
 </html>

@@ -14,6 +14,8 @@
 Auth::routes();
 
 Route::get('/', 'ProductController@index')->middleware('guest');
+Route::get('/list', 'ProductController@product_list')->middleware('guest');
+
 Route::get('/products/{id}', 'ProductController@show');
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/products/edit/{id}', 'ProductController@edit')->name('products.edit');
