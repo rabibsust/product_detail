@@ -5,8 +5,14 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h1>Edit: {{$product->name}}</h1>
-                        <a href="{{url('home')}}" class="btn btn-primary">Go Back</a>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <h1>Edit: {{$product->name}}</h1>
+                            </div>
+                            <div class="col-sm-2">
+                                <h1><a href="{{url('home')}}" class="btn btn-primary">Go Back</a></h1>
+                            </div>
+                        </div>
                     </div>
                     <div class="panel-body">
                         <div class="row">
