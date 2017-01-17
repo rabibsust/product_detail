@@ -15,9 +15,9 @@ This application have these features:
 
 - Open console and go to the directory where you want to install this application.
 - Run `git clone https://github.com/rabibsust/product_detail.git`
+- Go to your project directory.
 - Run `composer install`
 - Open your mysql server admin panel and add database.
-- Go to your project directory.
 - Copy **.env.example** file and change it to **.env**
 - Update **.env** file by setting:
   - DB_DATABASE=product   *----change this with your database name----*
